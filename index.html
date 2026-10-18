@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperIQ PKSK - 400 Cabaran Logik & Visual (40 Set)</title>
+    <script id="embedded-pksk-data" type="application/json">{}</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .hidden-screen {
+            display: none !important;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(241, 245, 249, 0.6);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.45; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.06); }
+        }
+        .animate-pulse-glow {
+            animation: pulseGlow 7s ease-in-out infinite;
+        }
+
+        .btn-tactile {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .btn-tactile:active {
+            transform: scale(0.97) translateY(1px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.98);
+            box-shadow: 0 20px 45px -12px rgba(99, 102, 241, 0.15), 0 0 0 1px rgba(99, 102, 241, 0.05);
+        }
+
+        .set-card-mudah {
+            border-color: #a7f3d0;
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        }
+        .set-card-sederhana {
+            border-color: #fde68a;
+            background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%);
+        }
+        .set-card-mencabar {
+            border-color: #fecdd3;
+            background: linear-gradient(135deg, #ffffff 0%, #fff1f2 100%);
+        }
+
+        .set-completed {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
+            border-color: #34d399 !important;
+            box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.15);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-[#f8faff] via-[#eef2ff] to-[#f5f3ff] text-slate-800 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden flex flex-col items-center justify-center p-3 sm:p-6">
+
+    <!-- Confetti Canvas for Victory Celebrations -->
+    <canvas id="confetti-canvas" class="fixed inset-0 pointer-events-none z-50 w-full h-full"></canvas>
+
+    <!-- Ambient Glowing Orbs in Background -->
+    <div class="fixed top-[-10%] left-[-10%] w-[38rem] h-[38rem] bg-gradient-to-tr from-indigo-500/20 via-purple-400/15 to-transparent rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+    <div class="fixed bottom-[-15%] right-[-10%] w-[42rem] h-[42rem] bg-gradient-to-bl from-pink-500/15 via-indigo-400/15 to-cyan-300/15 rounded-full blur-3xl pointer-events-none animate-pulse-glow" style="animation-delay: -3s;"></div>
+
+    <main id="app-card" class="glass-card max-w-2xl w-full rounded-3xl overflow-hidden p-5 sm:p-7 transition-all duration-300 relative z-10 my-4">
+
+        <!-- ========================================== -->
+        <!-- SCREEN 1: WELCOME & START                  -->
+        <!-- ========================================== -->
+        <section id="screen-welcome" class="py-4 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 border border-indigo-200/50 mb-3 text-[11px] font-extrabold text-indigo-700 tracking-wide uppercase">
+                <span>⚡</span>
+                <span>PKSK IQ Mastery Portal (400 Soalan)</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-ping"></span>
+            </div>
+
+            <div class="relative w-20 h-20 mx-auto mb-3">
+                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600 to-purple-500 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
+                <div class="relative w-full h-full bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 rounded-2xl text-white flex items-center justify-center text-3xl font-bold shadow-lg shadow-indigo-500/30">
+                    💡
+                </div>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                Latihan IQ PKSK (400 Cabaran)
+            </h1>
+            <p class="text-xs sm:text-sm font-medium text-slate-500 mt-1.5 max-w-md mx-auto leading-relaxed">
+                40 Set x 10 Soalan berperingkat: <strong>Mudah</strong>, <strong>Sederhana</strong>, dan <strong>Mencabar (KBAT)</strong> dengan sistem pantauan markah penuh untuk ibu bapa.
+            </p>
+
+            <div class="flex items-center justify-center gap-2 mt-4 text-[11px] font-bold text-slate-600 flex-wrap">
+                <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-emerald-200 text-emerald-700 shadow-2xs">🟢 12 Set Mudah</span>
+                <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-amber-200 text-amber-700 shadow-2xs">🟡 14 Set Sederhana</span>
+                <span class="px-2.5 py-1 bg-white/90 rounded-lg border border-rose-200 text-rose-700 shadow-2xs">🔴 14 Set Mencabar</span>
+            </div>
+
+            <form onsubmit="handleStartUser(event)" class="mt-6 text-left space-y-4 max-w-sm mx-auto">
+                <div>
+                    <label class="block text-xs font-black text-slate-700 uppercase tracking-wider mb-1.5 flex items-center justify-between" for="input-user-name">
+                        <span>Nama Anda / Anak</span>
+                        <span class="text-[10px] text-slate-400 font-semibold lowercase">untuk simpan buku rekod</span>
+                    </label>
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            id="input-user-name" 
+                            required 
+                            placeholder="Contoh: Aisyah / Haris / Mama" 
+                            maxlength="30"
+                            class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 focus:outline-none text-sm font-bold text-slate-800 placeholder:text-slate-400 bg-white shadow-xs transition"
+                        />
+                        <div class="absolute right-3.5 top-3 text-slate-400">✨</div>
+                    </div>
+                </div>
+
+                <button 
+                    type="submit" 
+                    class="btn-tactile w-full bg-gradient-to-r from-indigo-600 via-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold py-3.5 px-4 rounded-2xl shadow-lg shadow-indigo-600/25 text-sm flex items-center justify-center gap-2 group cursor-pointer"
+                >
+                    <span>Masuk Portal Latihan</span>
+                    <span class="text-base group-hover:translate-x-1 transition-transform">→</span>
+                </button>
+            </form>
+
+            <p class="mt-5 text-[11px] text-slate-400 flex items-center justify-center gap-1.5">
+                <span>🔒</span>
+                <span>Rekod markah 40 set disimpan secara kekal dan boleh disemak oleh ibu bapa bila-bila masa.</span>
+            </p>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 2: HUB / SET SELECTION (40 SETS)    -->
+        <!-- ========================================== -->
+        <section id="screen-hub" class="hidden-screen">
+            <div class="flex items-center justify-between pb-3.5 mb-3 border-b border-slate-100/90 flex-wrap gap-2">
+                <div>
+                    <div class="text-[10px] font-black text-indigo-600 uppercase tracking-wider flex items-center gap-1">
+                        <span>👋 PORTAL CALON PKSK</span>
+                    </div>
+                    <div class="text-lg font-black text-slate-900 flex items-center gap-1.5" id="hub-user-greeting">
+                        <span>Pengguna</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <button 
+                        onclick="openParentReportModal()" 
+                        class="btn-tactile text-[11px] text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 font-black px-3 py-1.5 rounded-xl transition flex items-center gap-1.5 shadow-md shadow-indigo-500/20 cursor-pointer"
+                        title="Lihat markah terperinci semua 40 set"
+                    >
+                        <span>📊</span> <span>Laporan Prestasi Ibu Bapa</span>
+                    </button>
+                    <button 
+                        onclick="openSyncModal()" 
+                        class="btn-tactile text-[11px] text-indigo-700 bg-white hover:bg-slate-50 border border-slate-200 font-bold px-2.5 py-1.5 rounded-xl transition flex items-center gap-1 shadow-2xs cursor-pointer"
+                        title="Pindah rekod ke laptop lain"
+                    >
+                        <span>🔄</span> <span class="hidden sm:inline">Pindah /</span> <span>Simpan</span>
+                    </button>
+                    <button 
+                        onclick="openEditNameModal()" 
+                        class="btn-tactile text-[11px] text-slate-600 hover:text-slate-900 bg-white hover:bg-slate-50 border border-slate-200 font-bold px-2.5 py-1.5 rounded-xl transition shadow-2xs cursor-pointer"
+                    >
+                        Tukar Nama
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Overview Cards -->
+            <div class="grid grid-cols-3 gap-2.5 mb-3 text-center">
+                <div class="bg-gradient-to-br from-indigo-50/90 to-white p-2.5 rounded-2xl border border-indigo-100/80 shadow-2xs">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">Set Selesai</div>
+                    <div class="text-base sm:text-lg font-black text-indigo-700 mt-0.5" id="stat-sets-completed">0/40</div>
+                    <div class="text-[9px] text-indigo-500 font-semibold">400 Soalan Total</div>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50/90 to-white p-2.5 rounded-2xl border border-purple-100/80 shadow-2xs">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">Skor Markah</div>
+                    <div class="text-base sm:text-lg font-black text-purple-700 mt-0.5" id="stat-total-score">0/400</div>
+                    <div class="text-[9px] text-purple-500 font-semibold">Jumlah Betul</div>
+                </div>
+                <div class="bg-gradient-to-br from-emerald-50/90 to-white p-2.5 rounded-2xl border border-emerald-100/80 shadow-2xs">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">Ketepatan</div>
+                    <div class="text-base sm:text-lg font-black text-emerald-600 mt-0.5" id="stat-accuracy">0%</div>
+                    <div class="text-[9px] text-emerald-600 font-semibold">Prestasi Minda</div>
+                </div>
+            </div>
+
+            <!-- Difficulty Filter Tabs -->
+            <div class="flex items-center justify-between mb-2.5 gap-1.5 flex-wrap">
+                <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl text-[11px] font-bold">
+                    <button onclick="setFilterDifficulty('all')" id="tab-diff-all" class="px-2.5 py-1 rounded-lg bg-white text-indigo-700 shadow-2xs">Semua (40)</button>
+                    <button onclick="setFilterDifficulty('mudah')" id="tab-diff-mudah" class="px-2.5 py-1 rounded-lg text-slate-600 hover:text-slate-900">🟢 Mudah (12)</button>
+                    <button onclick="setFilterDifficulty('sederhana')" id="tab-diff-sederhana" class="px-2.5 py-1 rounded-lg text-slate-600 hover:text-slate-900">🟡 Sederhana (14)</button>
+                    <button onclick="setFilterDifficulty('mencabar')" id="tab-diff-mencabar" class="px-2.5 py-1 rounded-lg text-slate-600 hover:text-slate-900">🔴 Mencabar (14)</button>
+                </div>
+                <button 
+                    onclick="promptResetProgress()" 
+                    class="text-[11px] text-rose-500 hover:text-rose-700 font-bold transition flex items-center gap-1 cursor-pointer py-1"
+                >
+                    <span>🗑️</span> <span>Set Semula Rekod</span>
+                </button>
+            </div>
+
+            <!-- Sets Grid Container (Scrollable 40 Sets) -->
+            <div id="hub-sets-grid" class="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 gap-2.5 max-h-[330px] overflow-y-auto pr-1 pb-1">
+                <!-- Injected via JavaScript -->
+            </div>
+
+            <div class="mt-3.5 pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 text-center flex items-center justify-center gap-1.5 font-medium">
+                <span class="text-amber-500">💡</span>
+                <span>Petua PKSK: Kuasai Set 1-12 terlebih dahulu, kemudian cabar diri dengan Set 27-40 (KBAT Tinggi).</span>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 3: ACTIVE QUIZ QUESTION SCREEN      -->
+        <!-- ========================================== -->
+        <section id="screen-quiz" class="hidden-screen">
+            <div class="flex items-center justify-between text-xs mb-2.5">
+                <button 
+                    onclick="returnToHub()" 
+                    class="btn-tactile text-slate-600 hover:text-slate-900 font-bold flex items-center gap-1.5 transition py-1 px-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 cursor-pointer"
+                >
+                    <span>←</span> <span>Menu Set</span>
+                </button>
+                <div class="flex items-center gap-1.5">
+                    <span id="quiz-tier-badge" class="px-2 py-0.5 text-[10px] font-black rounded-full uppercase tracking-wider">Mudah</span>
+                    <span id="quiz-set-tag" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-[11px] font-black px-2.5 py-0.5 rounded-full shadow-2xs">Set 1</span>
+                    <span id="quiz-progress-num" class="text-slate-600 font-black text-[11px]">Soalan 1 / 10</span>
+                </div>
+            </div>
+
+            <!-- Animated Progress Bar -->
+            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden mb-3 p-0.5 border border-slate-200/60">
+                <div id="quiz-progress-bar" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-full w-0 transition-all duration-300 rounded-full shadow-xs"></div>
+            </div>
+
+            <!-- Category Tag & Angle Guide Button -->
+            <div class="flex items-center justify-between mb-2">
+                <span id="quiz-cat-badge" class="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 border border-indigo-200/80 px-2.5 py-1 rounded-lg">
+                    <span>🏷️</span> <span id="quiz-cat-text">Kategori</span>
+                </span>
+                <button 
+                    type="button"
+                    onclick="openAngleGuideModal()" 
+                    class="btn-tactile text-[10px] font-extrabold text-purple-700 hover:text-purple-900 bg-purple-50 hover:bg-purple-100 border border-purple-200/80 px-2.5 py-1 rounded-lg flex items-center gap-1 transition shadow-2xs cursor-pointer"
+                >
+                    <span>🧭</span> <span>Panduan Sudut (°)</span>
+                </button>
+            </div>
+
+            <!-- Question Stem -->
+            <h2 id="quiz-stem-text" class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug mb-3">
+                Memuatkan soalan...
+            </h2>
+
+            <!-- Visual Diagram Card Box -->
+            <div id="quiz-visual-box" class="bg-gradient-to-b from-slate-50 to-indigo-50/40 border border-slate-200/90 rounded-2xl p-3 mb-3.5 flex items-center justify-center min-h-[85px] shadow-inner">
+                <!-- Dynamic SVG elements injected here -->
+            </div>
+
+            <!-- Answer Options List (Visual Grid / Text List) -->
+            <div id="quiz-options-container" class="space-y-2 mb-3">
+                <!-- Dynamic buttons injected here -->
+            </div>
+
+            <!-- Explanation & Feedback Box -->
+            <div id="quiz-feedback-box" class="hidden p-3.5 rounded-2xl mb-3 text-xs leading-relaxed transition-all shadow-xs">
+                <div id="feedback-header" class="font-black flex items-center gap-1.5 mb-1 text-sm"></div>
+                <p id="feedback-explanation" class="text-slate-700 leading-relaxed"></p>
+            </div>
+
+            <!-- Action Button -->
+            <button 
+                id="quiz-action-btn" 
+                class="btn-tactile w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 active:scale-[0.99] disabled:from-slate-200 disabled:to-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none text-white font-black py-3 px-4 rounded-2xl transition shadow-md shadow-indigo-600/20 text-sm flex items-center justify-center gap-2 cursor-pointer"
+            >
+                Semak Jawapan
+            </button>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 4: SET RESULT / SCORE               -->
+        <!-- ========================================== -->
+        <section id="screen-result" class="hidden-screen text-center py-2">
+            <div id="result-icon" class="text-5xl mb-2 animate-bounce">🎯</div>
+            <h2 class="text-xl font-black text-slate-900" id="result-set-title">Set Selesai!</h2>
+            <p class="text-xs text-slate-500 mb-4" id="result-subtitle">Berikut ialah analisis pencapaian anda:</p>
+
+            <div class="relative bg-gradient-to-tr from-indigo-50 via-purple-50 to-pink-50 border border-indigo-100 rounded-3xl p-5 max-w-xs mx-auto mb-4 text-center shadow-md shadow-indigo-100">
+                <div class="text-4xl font-black text-indigo-700" id="result-score-number">0 / 10</div>
+                <div class="text-xs font-extrabold text-indigo-500 mt-1 uppercase tracking-wider" id="result-percentage-tag">0% Ketepatan</div>
+            </div>
+
+            <div id="result-comment" class="text-xs text-slate-700 max-w-sm mx-auto mb-5 leading-relaxed bg-white p-3.5 rounded-2xl border border-slate-200/90 shadow-2xs">
+                Ulasan prestasi anda.
+            </div>
+
+            <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto">
+                <button 
+                    onclick="retryActiveSet()" 
+                    class="btn-tactile w-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-extrabold py-3 px-3 rounded-2xl transition text-xs shadow-2xs cursor-pointer"
+                >
+                    Ulang Set Ini ↺
+                </button>
+                <button 
+                    onclick="proceedNextSet()" 
+                    id="result-next-btn" 
+                    class="btn-tactile w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold py-3 px-3 rounded-2xl transition text-xs shadow-md shadow-indigo-500/25 cursor-pointer"
+                >
+                    Set Seterusnya →
+                </button>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- MODAL: PARENT & CANDIDATE REPORT DASHBOARD -->
+        <!-- ========================================== -->
+        <div id="modal-parent-report" class="hidden-screen absolute inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 rounded-3xl">
+            <div class="bg-white rounded-3xl p-5 sm:p-6 max-w-xl w-full text-left shadow-2xl border border-slate-100 max-h-[92vh] flex flex-col">
+                <div class="flex items-center justify-between pb-3 border-b border-slate-100 shrink-0">
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">📊</span>
+                        <div>
+                            <h3 class="text-sm sm:text-base font-black text-slate-900">Buku Rekod & Pemantauan Ibu Bapa</h3>
+                            <p class="text-[10px] text-slate-400 font-semibold" id="report-modal-user-subtitle">Calon: -</p>
+                        </div>
+                    </div>
+                    <button onclick="closeParentReportModal()" class="text-slate-400 hover:text-slate-700 text-xs font-extrabold p-1.5 rounded-lg cursor-pointer">✕</button>
+                </div>
+
+                <!-- Tier Summary Badges -->
+                <div class="grid grid-cols-3 gap-2 py-3 shrink-0">
+                    <div class="bg-emerald-50/80 p-2.5 rounded-2xl border border-emerald-100 text-center">
+                        <div class="text-[10px] font-black text-emerald-800 uppercase">🟢 Mudah</div>
+                        <div class="text-sm font-black text-emerald-700" id="report-tier-mudah">0/12 Set</div>
+                        <div class="text-[9px] text-emerald-600 font-bold" id="report-acc-mudah">0% Tepat</div>
+                    </div>
+                    <div class="bg-amber-50/80 p-2.5 rounded-2xl border border-amber-100 text-center">
+                        <div class="text-[10px] font-black text-amber-800 uppercase">🟡 Sederhana</div>
+                        <div class="text-sm font-black text-amber-700" id="report-tier-sederhana">0/14 Set</div>
+                        <div class="text-[9px] text-amber-600 font-bold" id="report-acc-sederhana">0% Tepat</div>
+                    </div>
+                    <div class="bg-rose-50/80 p-2.5 rounded-2xl border border-rose-100 text-center">
+                        <div class="text-[10px] font-black text-rose-800 uppercase">🔴 Mencabar</div>
+                        <div class="text-sm font-black text-rose-700" id="report-tier-mencabar">0/14 Set</div>
+                        <div class="text-[9px] text-rose-600 font-bold" id="report-acc-mencabar">0% Tepat</div>
+                    </div>
+                </div>
+
+                <!-- Diagnostic Assessment Note -->
+                <div id="report-diagnostic-box" class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3 mb-2 text-xs text-slate-700 shrink-0 leading-relaxed">
+                    Sedang memuatkan ulasan prestasi...
+                </div>
+
+                <!-- Scrollable Table of all 40 sets -->
+                <div class="flex-1 overflow-y-auto pr-1 border border-slate-100 rounded-2xl">
+                    <table class="w-full text-left text-xs">
+                        <thead class="bg-slate-50 sticky top-0 text-[10px] uppercase font-black text-slate-500 border-b border-slate-200">
+                            <tr>
+                                <th class="p-2.5">Set</th>
+                                <th class="p-2.5">Tahap</th>
+                                <th class="p-2.5 text-center">Markah</th>
+                                <th class="p-2.5 text-center">Peratus</th>
+                                <th class="p-2.5 text-right">Tindakan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="report-table-body" class="divide-y divide-slate-100 font-semibold">
+                            <!-- Injected via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between gap-2 shrink-0 flex-wrap">
+                    <button 
+                        onclick="copyParentReportSummary()" 
+                        class="btn-tactile text-xs bg-slate-800 hover:bg-slate-900 text-white font-extrabold py-2 px-3.5 rounded-xl transition flex items-center gap-1.5 cursor-pointer shadow-xs"
+                    >
+                        <span>📋</span> <span>Salin Ringkasan Ke WhatsApp</span>
+                    </button>
+                    <button 
+                        onclick="closeParentReportModal()" 
+                        class="btn-tactile bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-xl text-xs transition cursor-pointer"
+                    >
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sync Modal -->
+        <div id="modal-sync" class="hidden-screen absolute inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 rounded-3xl">
+            <div class="bg-white rounded-3xl p-5 sm:p-6 max-w-sm w-full text-left shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto">
+                <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">💻</span>
+                        <h3 class="text-sm font-black text-slate-900">Pindah Rekod Ke Laptop Lain</h3>
+                    </div>
+                    <button onclick="closeSyncModal()" class="text-slate-400 hover:text-slate-700 text-xs font-extrabold p-1 rounded-lg cursor-pointer">✕</button>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50/50 border border-indigo-100 rounded-2xl p-3.5 mb-3.5">
+                    <div class="text-xs font-black text-indigo-950 flex items-center gap-1.5 mb-1">
+                        <span>💾</span> <span>Cara 1: Simpan Terus Ke Fail HTML</span>
+                    </div>
+                    <p class="text-[11px] text-slate-600 mb-2.5 leading-relaxed">
+                        Muat turun fail HTML yang telah disimpan dengan markah terkini 40 set. Anda boleh hantar fail ini ke laptop lain dan buka terus!
+                    </p>
+                    <button 
+                        onclick="downloadUpdatedHtml()" 
+                        class="btn-tactile w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-2.5 px-3 rounded-xl text-xs transition shadow-md shadow-indigo-600/20 flex items-center justify-center gap-1.5 cursor-pointer"
+                    >
+                        <span>📥</span> <span>Muat Turun Fail HTML Berisi Markah</span>
+                    </button>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 mb-3">
+                    <div class="text-xs font-black text-slate-800 flex items-center gap-1.5 mb-1">
+                        <span>📋</span> <span>Cara 2: Kod Pindah Pantas (WhatsApp)</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 mb-2.5 leading-relaxed">
+                        Salin kod di bawah dan hantar ke WhatsApp, kemudian tampal kod tersebut di laptop kedua:
+                    </p>
+                    
+                    <button 
+                        onclick="copySyncCode()" 
+                        id="btn-copy-sync"
+                        class="btn-tactile w-full bg-slate-800 hover:bg-slate-900 text-white font-extrabold py-2 px-3 rounded-xl text-xs transition flex items-center justify-center gap-1.5 mb-3 cursor-pointer"
+                    >
+                        <span>Salin Kod Kemajuan 📄</span>
+                    </button>
+
+                    <div class="pt-2 border-t border-slate-200">
+                        <label class="block text-[10px] font-black text-slate-600 uppercase mb-1">Tampal Kod Dari Laptop Terdahulu:</label>
+                        <div class="flex gap-1.5">
+                            <input 
+                                type="text" 
+                                id="input-sync-code" 
+                                placeholder="Tampal kod di sini..." 
+                                class="flex-1 px-3 py-2 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-indigo-500 font-mono bg-white"
+                            />
+                            <button 
+                                onclick="applyImportedCode()" 
+                                class="btn-tactile bg-emerald-600 hover:bg-emerald-700 text-white font-black px-3 py-2 rounded-xl text-xs transition cursor-pointer"
+                            >
+                                Muat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sync-status-msg" class="hidden text-center text-xs font-black py-2 px-3 rounded-xl mb-3"></div>
+
+                <button 
+                    onclick="closeSyncModal()" 
+                    class="btn-tactile w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 rounded-xl text-xs transition cursor-pointer"
+                >
+                    Tutup
+                </button>
+            </div>
+        </div>
+
+        <!-- Reset Progress Modal -->
+        <div id="modal-reset" class="hidden-screen absolute inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 rounded-3xl">
+            <div class="bg-white rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl border border-slate-100">
+                <div class="text-3xl mb-1.5">🗑️</div>
+                <h3 class="text-sm font-black text-slate-900">Padam Rekod?</h3>
+                <p class="text-xs text-slate-500 mt-1 mb-4 leading-relaxed">Semua rekod markah 40 set latihan akan disetkan semula ke sifar.</p>
+                <div class="flex gap-2">
+                    <button onclick="closeResetModal()" class="btn-tactile flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2.5 rounded-xl cursor-pointer">Batal</button>
+                    <button onclick="confirmResetProgress()" class="btn-tactile flex-1 bg-rose-600 hover:bg-rose-700 text-white text-xs font-black py-2.5 rounded-xl shadow-xs cursor-pointer">Padam</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Name Modal -->
+        <div id="modal-edit-name" class="hidden-screen absolute inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 rounded-3xl">
+            <div class="bg-white rounded-3xl p-6 max-w-xs w-full text-left shadow-2xl border border-slate-100">
+                <h3 class="text-sm font-black text-slate-900 mb-1">Tukar Nama</h3>
+                <p class="text-xs text-slate-500 mb-3">Masukkan nama calon baharu untuk simpanan rekod:</p>
+                <input 
+                    type="text" 
+                    id="input-new-name" 
+                    maxlength="30"
+                    placeholder="Nama baru" 
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs font-bold focus:outline-none focus:border-indigo-500 mb-3.5"
+                />
+                <div class="flex gap-2">
+                    <button onclick="closeEditNameModal()" class="btn-tactile flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2.5 rounded-xl cursor-pointer">Batal</button>
+                    <button onclick="saveNewName()" class="btn-tactile flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-black py-2.5 rounded-xl cursor-pointer">Simpan</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angle Guide Cheat Sheet Modal -->
+        <div id="modal-angle-guide" class="hidden-screen absolute inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 z-50 rounded-3xl">
+            <div class="bg-white rounded-3xl p-5 sm:p-6 max-w-sm w-full text-left shadow-2xl border border-slate-100 max-h-[90vh] overflow-y-auto">
+                <div class="flex items-center justify-between pb-2.5 mb-3 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🧭</span>
+                        <h3 class="text-xs sm:text-sm font-black text-slate-900">Teknik Pantas: Sudut & Putaran (°)</h3>
+                    </div>
+                    <button onclick="closeAngleGuideModal()" class="text-slate-400 hover:text-slate-700 text-xs font-extrabold p-1 rounded-lg cursor-pointer">✕</button>
+                </div>
+
+                <p class="text-[11px] text-slate-600 mb-3 leading-relaxed">
+                    Cara paling pantas memahami darjah ialah membayangkan <strong>muka jam analog</strong>:
+                </p>
+
+                <div class="grid grid-cols-2 gap-2 text-[11px] mb-3">
+                    <div class="bg-indigo-50/80 p-2.5 rounded-2xl border border-indigo-100/80">
+                        <div class="font-black text-indigo-950 flex items-center gap-1">
+                            <span>🕛</span> <span>0° / 360°</span>
+                        </div>
+                        <div class="text-[10px] text-indigo-700 font-bold mt-0.5">Tegak Atas (Pukul 12)</div>
+                        <div class="text-[9px] text-slate-500">Mula & pusingan penuh</div>
+                    </div>
+                    <div class="bg-indigo-50/80 p-2.5 rounded-2xl border border-indigo-100/80">
+                        <div class="font-black text-indigo-950 flex items-center gap-1">
+                            <span>🕒</span> <span>90°</span>
+                        </div>
+                        <div class="text-[10px] text-indigo-700 font-bold mt-0.5">Kanan Tegak (Pukul 3)</div>
+                        <div class="text-[9px] text-slate-500">Suku pusingan / Huruf "L"</div>
+                    </div>
+                    <div class="bg-indigo-50/80 p-2.5 rounded-2xl border border-indigo-100/80">
+                        <div class="font-black text-indigo-950 flex items-center gap-1">
+                            <span>🕕</span> <span>180°</span>
+                        </div>
+                        <div class="text-[10px] text-indigo-700 font-bold mt-0.5">Bawah Tegak (Pukul 6)</div>
+                        <div class="text-[9px] text-slate-500">Separuh pusingan / Terbalik</div>
+                    </div>
+                    <div class="bg-indigo-50/80 p-2.5 rounded-2xl border border-indigo-100/80">
+                        <div class="font-black text-indigo-950 flex items-center gap-1">
+                            <span>🕘</span> <span>270°</span>
+                        </div>
+                        <div class="text-[10px] text-indigo-700 font-bold mt-0.5">Kiri Tegak (Pukul 9)</div>
+                        <div class="text-[9px] text-slate-500">Tiga suku pusingan</div>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50/90 border border-amber-200/90 rounded-2xl p-3 mb-3 text-[11px] text-amber-950">
+                    <strong class="font-black block text-amber-950 mb-0.5 flex items-center gap-1">
+                        <span>⚡</span> Bagaimana dengan 45°?
+                    </strong>
+                    <span>45° ialah separuh suku. Bayangkan jarum jam pada <strong>pukul 1:30</strong> (serong atas-kanan) atau <strong>pukul 4:30</strong> (serong bawah-kanan).</span>
+                </div>
+
+                <button 
+                    onclick="closeAngleGuideModal()" 
+                    class="btn-tactile w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-extrabold py-2.5 rounded-xl text-xs transition shadow-md shadow-indigo-600/20 cursor-pointer"
+                >
+                    Faham, Tutup Panduan ✓
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // ==========================================
+        // 1. POLISHED SVG VECTOR ASSET HELPERS
+        // ==========================================
+        const SVG_ART = {
+            card(inner) {
+                return `<svg class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-1 border border-slate-200/80 shadow-2xs inline-block transition-transform" viewBox="0 0 50 50">${inner}</svg>`;
+            },
+            arrow(deg, color = "#4f46e5") {
+                const angle = typeof deg === 'string' ? parseFloat(deg.replace(/[^\d.-]/g, '')) : Number(deg);
+                const validAngle = isNaN(angle) ? 0 : angle;
+                return this.card(`
+                    <g transform="rotate(${validAngle} 25 25)">
+                        <line x1="25" y1="37" x2="25" y2="15" stroke="${color}" stroke-width="3.5" stroke-linecap="round"/>
+                        <polygon points="25,8 18,19 32,19" fill="${color}"/>
+                    </g>
+                `);
+            },
+            doubleArrow(deg, flip = false) {
+                const angle = typeof deg === 'string' ? parseFloat(deg.replace(/[^\d.-]/g, '')) : Number(deg);
+                const validAngle = isNaN(angle) ? 0 : angle;
+                return this.card(`
+                    <g transform="rotate(${validAngle} 25 25)">
+                        <line x1="20" y1="36" x2="20" y2="16" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+                        <polygon points="20,10 15,19 25,19" fill="#6366f1"/>
+                        <line x1="30" y1="${flip ? 16 : 36}" x2="30" y2="${flip ? 36 : 16}" stroke="#ec4899" stroke-width="3" stroke-linecap="round"/>
+                        <polygon points="30,${flip ? 40 : 10} 25,${flip ? 31 : 19} 35,${flip ? 31 : 19}" fill="#ec4899"/>
+                    </g>
+                `);
+            },
+            polygon(sides, filled = false) {
+                let s = Math.max(3, parseInt(sides) || 3);
+                let pts = [];
+                for (let i = 0; i < s; i++) {
+                    let a = (i * 2 * Math.PI / s) - (Math.PI / 2);
+                    let x = 25 + 17 * Math.cos(a);
+                    let y = 25 + 17 * Math.sin(a);
+                    pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+                }
+                const fillColor = filled ? "#6366f1" : "#eef2ff";
+                return this.card(`<polygon points="${pts.join(' ')}" fill="${fillColor}" stroke="#4f46e5" stroke-width="2.5" stroke-linejoin="round"/>`);
+            },
+            nestedShape(outerSides, innerSides) {
+                let sOut = Math.max(3, parseInt(outerSides) || 3);
+                let sIn = Math.max(3, parseInt(innerSides) || 3);
+                let ptsOut = [], ptsIn = [];
+                for (let i = 0; i < sOut; i++) {
+                    let a = (i * 2 * Math.PI / sOut) - (Math.PI / 2);
+                    ptsOut.push(`${(25 + 18 * Math.cos(a)).toFixed(1)},${(25 + 18 * Math.sin(a)).toFixed(1)}`);
+                }
+                for (let i = 0; i < sIn; i++) {
+                    let a = (i * 2 * Math.PI / sIn) - (Math.PI / 2);
+                    ptsIn.push(`${(25 + 9 * Math.cos(a)).toFixed(1)},${(25 + 9 * Math.sin(a)).toFixed(1)}`);
+                }
+                return this.card(`
+                    <polygon points="${ptsOut.join(' ')}" fill="#f1f5f9" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+                    <polygon points="${ptsIn.join(' ')}" fill="#818cf8" stroke="#4338ca" stroke-width="1.8" stroke-linejoin="round"/>
+                `);
+            },
+            dotInCircle(quarter, innerFilled = false) {
+                const q = Math.abs(parseInt(quarter) || 0) % 4;
+                const coords = [{x: 25, y: 11}, {x: 39, y: 25}, {x: 25, y: 39}, {x: 11, y: 25}];
+                const p = coords[q];
+                return this.card(`
+                    <circle cx="25" cy="25" r="16" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3"/>
+                    <circle cx="${p.x}" cy="${p.y}" r="4.5" fill="#ec4899"/>
+                    ${innerFilled ? `<circle cx="25" cy="25" r="5" fill="#4f46e5"/>` : ''}
+                `);
+            },
+            shadedGrid(activeQuarter, patternType = 0) {
+                const q = Math.abs(parseInt(activeQuarter) || 0) % 4;
+                const fills = ['#f8fafc', '#f8fafc', '#f8fafc', '#f8fafc'];
+                fills[q] = patternType === 1 ? '#ec4899' : '#4f46e5';
+                return this.card(`
+                    <rect x="6" y="6" width="18" height="18" rx="3" fill="${fills[0]}" stroke="#cbd5e1" stroke-width="1.2"/>
+                    <rect x="26" y="6" width="18" height="18" rx="3" fill="${fills[1]}" stroke="#cbd5e1" stroke-width="1.2"/>
+                    <rect x="26" y="26" width="18" height="18" rx="3" fill="${fills[2]}" stroke="#cbd5e1" stroke-width="1.2"/>
+                    <rect x="6" y="26" width="18" height="18" rx="3" fill="${fills[3]}" stroke="#cbd5e1" stroke-width="1.2"/>
+                `);
+            },
+            matrix3x3(activeBitmask) {
+                let rects = '';
+                for (let r = 0; r < 3; r++) {
+                    for (let c = 0; c < 3; c++) {
+                        const bit = (r * 3 + c);
+                        const isShaded = (activeBitmask & (1 << bit)) !== 0;
+                        rects += `<rect x="${6 + c * 13}" y="${6 + r * 13}" width="11" height="11" rx="2" fill="${isShaded ? '#4f46e5' : '#f8fafc'}" stroke="#cbd5e1" stroke-width="1"/>`;
+                    }
+                }
+                return this.card(rects);
+            },
+            clock(hour) {
+                const h = parseInt(hour) || 12;
+                const angle = (h % 12) * 30;
+                return this.card(`
+                    <circle cx="25" cy="25" r="19" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+                    <line x1="25" y1="25" x2="25" y2="10" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+                    <g transform="rotate(${angle} 25 25)">
+                        <line x1="25" y1="25" x2="25" y2="14" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+                    </g>
+                    <circle cx="25" cy="25" r="2.5" fill="#0f172a"/>
+                `);
+            },
+            dice(num) {
+                const n = Math.min(6, Math.max(1, parseInt(num) || 1));
+                const dotMap = {
+                    1: [[25,25]],
+                    2: [[16,16], [34,34]],
+                    3: [[16,16], [25,25], [34,34]],
+                    4: [[16,16], [34,16], [16,34], [34,34]],
+                    5: [[16,16], [34,16], [25,25], [16,34], [34,34]],
+                    6: [[16,14], [16,25], [16,36], [34,14], [34,25], [34,36]]
+                };
+                const points = dotMap[n] || dotMap[1];
+                let dotsSvg = points.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#1e293b"/>`).join('');
+                return this.card(`
+                    <rect x="6" y="6" width="38" height="38" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+                    ${dotsSvg}
+                `);
+            },
+            cubeNet(faceValue) {
+                // Cross pattern net for spatial reasoning
+                return this.card(`
+                    <g fill="#e0e7ff" stroke="#4338ca" stroke-width="1.2">
+                        <rect x="18" y="4" width="14" height="14"/>
+                        <rect x="4" y="18" width="14" height="14"/>
+                        <rect x="18" y="18" width="14" height="14" fill="#c7d2fe"/>
+                        <rect x="32" y="18" width="14" height="14"/>
+                        <rect x="18" y="32" width="14" height="14"/>
+                    </g>
+                    <text x="25" y="28" font-size="9" font-weight="900" fill="#1e1b4b" text-anchor="middle">${faceValue}</text>
+                `);
+            },
+            badgeEmoji(emoji) {
+                return `
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-white to-slate-100 rounded-2xl border border-slate-200/90 flex items-center justify-center text-xl sm:text-2xl shadow-xs">
+                        ${emoji}
+                    </div>
+                `;
+            },
+            sequenceRow(arr) {
+                return `
+                    <div class="flex items-center justify-center gap-1.5 sm:gap-2.5 flex-wrap py-1">
+                        ${arr.map((item, idx) => `
+                            <div class="flex items-center gap-1.5 sm:gap-2.5">
+                                ${item}
+                                ${idx < arr.length - 1 ? '<span class="text-indigo-300 font-extrabold text-sm sm:text-base">➔</span>' : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            },
+            placeholderUnknown() {
+                return `
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-amber-50 rounded-2xl border-2 border-dashed border-amber-300 flex items-center justify-center text-amber-600 font-black text-xl shadow-inner animate-pulse">
+                        ?
+                    </div>
+                `;
+            }
+        };
+
+        // ==========================================
+        // 2. 400 DISTINCT QUESTIONS GENERATOR (40 SETS)
+        // ==========================================
+        function getDirectionData(deg) {
+            const d = ((Math.round(deg) % 360) + 360) % 360;
+            switch(d) {
+                case 0: return { name: "Menghadap Atas", clock: "Pukul 12:00", deg: 0, text: "0°" };
+                case 45: return { name: "Serong Atas-Kanan", clock: "Pukul 1:30", deg: 45, text: "45°" };
+                case 90: return { name: "Menghadap Kanan", clock: "Pukul 3:00", deg: 90, text: "90°" };
+                case 135: return { name: "Serong Bawah-Kanan", clock: "Pukul 4:30", deg: 135, text: "135°" };
+                case 180: return { name: "Menghadap Bawah", clock: "Pukul 6:00", deg: 180, text: "180°" };
+                case 225: return { name: "Serong Bawah-Kiri", clock: "Pukul 7:30", deg: 225, text: "225°" };
+                case 270: return { name: "Menghadap Kiri", clock: "Pukul 9:00", deg: 270, text: "270°" };
+                case 315: return { name: "Serong Atas-Kiri", clock: "Pukul 10:30", deg: 315, text: "315°" };
+                default: return { name: `Arah ${d}°`, clock: `Sudut ${d}°`, deg: d, text: `${d}°` };
+            }
+        }
+
+        function create400Questions() {
+            const fullBank = [];
+
+            // 40 Sets Total (Sets 1-12: Mudah, Sets 13-26: Sederhana, Sets 27-40: Mencabar)
+            for (let s = 1; s <= 40; s++) {
+                let tierKey = "mudah";
+                let tierLabel = "Mudah";
+                let tierBadgeClass = "bg-emerald-100 text-emerald-800 border-emerald-200";
+
+                if (s >= 13 && s <= 26) {
+                    tierKey = "sederhana";
+                    tierLabel = "Sederhana";
+                    tierBadgeClass = "bg-amber-100 text-amber-800 border-amber-200";
+                } else if (s >= 27) {
+                    tierKey = "mencabar";
+                    tierLabel = "Mencabar (KBAT)";
+                    tierBadgeClass = "bg-rose-100 text-rose-800 border-rose-200";
+                }
+
+                const qList = [];
+
+                // ==========================================
+                // Q1: ROTATIONAL VISUAL (Easy: 90°/180°, Med: 45°, Hard: Compound/Counter)
+                // ==========================================
+                let rotStep, rotDesc;
+                if (tierKey === "mudah") {
+                    rotStep = (s % 2 === 0) ? 90 : 180;
+                    rotDesc = rotStep === 90 ? "90° (suku pusingan)" : "180° (separuh pusingan / terbalik terus)";
+                } else if (tierKey === "sederhana") {
+                    rotStep = 45;
+                    rotDesc = "45° (separuh suku pusingan / gerak 1 jam setengah)";
+                } else {
+                    // Hard: Counter-clockwise + irregular steps
+                    rotStep = (s % 2 === 0) ? -90 : -45;
+                    rotDesc = rotStep === -90 ? "90° MELAWAN arah jam (ke kiri)" : "45° MELAWAN arah jam (ke kiri serong)";
+                }
+
+                const baseA = (s * 45) % 360;
+                const a1 = (baseA + 360) % 360;
+                const a2 = (baseA + rotStep + 360) % 360;
+                const a3 = (baseA + rotStep * 2 + 360) % 360;
+                const a4 = (baseA + rotStep * 3 + 360) % 360;
+
+                const dir3 = getDirectionData(a3);
+                const dir4 = getDirectionData(a4);
+
+                qList.push({
+                    cat: "Pola Putaran Sudut",
+                    isVisualOptions: true,
+                    q: `Perhatikan turutan putaran anak panah di atas (${rotDesc}). Antara pilihan rajah A, B, C, atau D, manakah kedudukan anak panah yang betul seterusnya?`,
+                    visual: SVG_ART.sequenceRow([SVG_ART.arrow(a1), SVG_ART.arrow(a2), SVG_ART.arrow(a3), SVG_ART.placeholderUnknown()]),
+                    options: [
+                        SVG_ART.arrow((a4 + 180) % 360),
+                        SVG_ART.arrow(a4), // Option B (1)
+                        SVG_ART.arrow((a4 + 90) % 360),
+                        SVG_ART.arrow((a4 + 270) % 360)
+                    ],
+                    ans: 1,
+                    expl: `🧭 <strong>Pola Sudut:</strong> Rajah berputar secara seragam sebanyak <strong>${rotDesc}</strong>. Daripada ${dir3.name} (${dir3.clock}), putaran seterusnya menghadap tepat ke arah <strong>${dir4.name} (${dir4.clock} / ${dir4.text})</strong>, iaitu Rajah (B).`
+                });
+
+                // ==========================================
+                // Q2: SHAPES & SPATIAL (Mudah: sides +1, Med: nested parity, Hard: 3x3 Matrix)
+                // ==========================================
+                if (tierKey === "mudah") {
+                    const baseSides = 3 + (s % 4);
+                    const targetSides = baseSides + 3;
+                    qList.push({
+                        cat: "Pola Poligon & Sisi",
+                        isVisualOptions: true,
+                        q: `Pola poligon bertambah sisinya secara teratur. Pilih bentuk geometri yang betul bagi menggantikan tanda tanya (?):`,
+                        visual: SVG_ART.sequenceRow([SVG_ART.polygon(baseSides), SVG_ART.polygon(baseSides + 1), SVG_ART.polygon(baseSides + 2), SVG_ART.placeholderUnknown()]),
+                        options: [
+                            SVG_ART.polygon(targetSides - 1),
+                            SVG_ART.polygon(targetSides),
+                            SVG_ART.polygon(targetSides + 1),
+                            SVG_ART.polygon(targetSides + 2)
+                        ],
+                        ans: 1,
+                        expl: `Bilangan sisi bertambah satu demi satu: ${baseSides} sisi → ${baseSides + 1} sisi → ${baseSides + 2} sisi. Bentuk seterusnya mestilah mempunyai <strong>${targetSides} sisi</strong> (Rajah B).`
+                    });
+                } else if (tierKey === "sederhana") {
+                    // Nested shapes logic (outer sides increase, inner sides decrease)
+                    const outS = 3 + (s % 3);
+                    const inS = 6 - (s % 2);
+                    qList.push({
+                        cat: "Pola Bentuk Bersarang",
+                        isVisualOptions: true,
+                        q: `Pola bentuk bersarang di atas mempunyai hubungan dua hala (sisi luar bertambah, manakala sisi dalam berkurang). Pilih rajah pengganti tanda tanya (?):`,
+                        visual: SVG_ART.sequenceRow([
+                            SVG_ART.nestedShape(outS, inS),
+                            SVG_ART.nestedShape(outS + 1, inS - 1),
+                            SVG_ART.nestedShape(outS + 2, inS - 2),
+                            SVG_ART.placeholderUnknown()
+                        ]),
+                        options: [
+                            SVG_ART.nestedShape(outS + 3, inS - 1),
+                            SVG_ART.nestedShape(outS + 3, inS - 3), // Ans
+                            SVG_ART.nestedShape(outS + 2, inS - 3),
+                            SVG_ART.nestedShape(outS + 1, inS - 2)
+                        ],
+                        ans: 1,
+                        expl: `Sisi luar bertambah 1 (${outS + 2} → <strong>${outS + 3} sisi</strong>) manakala sisi dalam berkurang 1 (${inS - 2} → <strong>${inS - 3} sisi</strong>). Rajah (B) memenuhi kedua-dua syarat.`
+                    });
+                } else {
+                    // Hard: Matrix 3x3 pattern bitmask
+                    const mask1 = 0b001010100;
+                    const mask2 = 0b010010010;
+                    const mask3 = 0b100010001;
+                    const maskTarget = 0b111000111;
+                    qList.push({
+                        cat: "Matriks Visual 3x3",
+                        isVisualOptions: true,
+                        q: `Setiap petak 3x3 mempunyai peralihan susunan simetri. Berdasarkan siri rajah di atas, pilih rajah yang melengkapkan jujukan seterusnya:`,
+                        visual: SVG_ART.sequenceRow([SVG_ART.matrix3x3(mask1), SVG_ART.matrix3x3(mask2), SVG_ART.matrix3x3(mask3), SVG_ART.placeholderUnknown()]),
+                        options: [
+                            SVG_ART.matrix3x3(0b000111000),
+                            SVG_ART.matrix3x3(maskTarget),
+                            SVG_ART.matrix3x3(0b101010101),
+                            SVG_ART.matrix3x3(0b010101010)
+                        ],
+                        ans: 1,
+                        expl: `Corak menunjukkan transformasi garisan pepenjuru ke simetri barisan atas-bawah lengkap. Pilihan (B) mewakili pola simetri imbangan yang tepat.`
+                    });
+                }
+
+                // ==========================================
+                // Q3: ORBITING & SHADING LOGIC
+                // ==========================================
+                const orbPos = (s * 3) % 4;
+                const orbDir = (s % 2 === 0) ? 1 : -1;
+                const orbNext = (orbPos + orbDir * 3 + 8) % 4;
+                const orbDirText = orbDir === 1 ? "arah jam" : "melawan arah jam";
+                qList.push({
+                    cat: "Peredaran Titik & Ruang",
+                    isVisualOptions: true,
+                    q: `Titik merah jambu mengorbit di sekeliling bulatan secara seragam (${orbDirText}). Pilih rajah kedudukan seterusnya:`,
+                    visual: SVG_ART.sequenceRow([
+                        SVG_ART.dotInCircle(orbPos),
+                        SVG_ART.dotInCircle((orbPos + orbDir + 4) % 4),
+                        SVG_ART.dotInCircle((orbPos + orbDir * 2 + 8) % 4),
+                        SVG_ART.placeholderUnknown()
+                    ]),
+                    options: [
+                        SVG_ART.dotInCircle((orbNext + 2) % 4),
+                        SVG_ART.dotInCircle(orbNext), // Ans
+                        SVG_ART.dotInCircle((orbNext + 1) % 4),
+                        SVG_ART.dotInCircle((orbNext + 3) % 4)
+                    ],
+                    ans: 1,
+                    expl: `Titik beredar 90° mengikut ${orbDirText} pada setiap langkah. Langkah ke-4 terletak tepat pada kedudukan Rajah (B).`
+                });
+
+                // ==========================================
+                // Q4: 2x2 SHADED QUADRANT OR SPATIAL NET
+                // ==========================================
+                if (tierKey === "mencabar") {
+                    // 3D Cube net face logic
+                    const cubeTop = (s % 6) + 1;
+                    const cubeBot = 7 - cubeTop;
+                    qList.push({
+                        cat: "Logik Lipatan Bentangan Kubus 3D",
+                        isVisualOptions: true,
+                        q: `Berdasarkan bentangan kubus di atas, jika nombor pada tapak tengah ialah ${cubeTop}, apakah nombor pada permukaan yang bertentangan apabila dilipat menjadi kubus sempurna?`,
+                        visual: SVG_ART.cubeNet(cubeTop),
+                        options: [
+                            SVG_ART.cubeNet((cubeBot % 6) + 1),
+                            SVG_ART.cubeNet(cubeBot),
+                            SVG_ART.cubeNet(((cubeBot + 2) % 6) + 1),
+                            SVG_ART.cubeNet(((cubeBot + 4) % 6) + 1)
+                        ],
+                        ans: 1,
+                        expl: `Hukum bentangan kubus piawai: Permukaan bertentangan sentiasa berselisih satu petak dan mempunyai jumlah padanan 7 (7 - ${cubeTop} = <strong>${cubeBot}</strong>). Maka rajah (B) ialah jawapannya.`
+                    });
+                } else {
+                    const gridPos = (s * 2) % 4;
+                    const gridTarget = (gridPos + 3) % 4;
+                    qList.push({
+                        cat: "Pola Lorekan Petak 2x2",
+                        isVisualOptions: true,
+                        q: `Petak berwarna berputar mengikut arah jam ke suku berikutnya. Pilih rajah yang menyambung jujukan ini:`,
+                        visual: SVG_ART.sequenceRow([SVG_ART.shadedGrid(gridPos), SVG_ART.shadedGrid(gridPos + 1), SVG_ART.shadedGrid(gridPos + 2), SVG_ART.placeholderUnknown()]),
+                        options: [
+                            SVG_ART.shadedGrid((gridTarget + 2) % 4),
+                            SVG_ART.shadedGrid(gridTarget),
+                            SVG_ART.shadedGrid((gridTarget + 1) % 4),
+                            SVG_ART.shadedGrid((gridTarget + 3) % 4)
+                        ],
+                        ans: 1,
+                        expl: `Lorekan bergerak satu suku petak mengikut pusingan jam pada setiap langkah. Rajah (B) berada pada suku yang betul seterusnya.`
+                    });
+                }
+
+                // ==========================================
+                // Q5: VERBAL / CONDITIONAL ANALOGY
+                // ==========================================
+                const analogyMaster = [
+                    { a: "Doktor : Hospital", b: "Guru : Sekolah", desc: "Tempat kerja utama bagi profesion berkenaan." },
+                    { a: "Kereta : Petrol", b: "Manusia : Makanan", desc: "Punca tenaga penting untuk fungsi pergerakan." },
+                    { a: "Matahari : Siang", b: "Bulan : Malam", desc: "Cakerawala yang menerangi waktu masing-masing." },
+                    { a: "Jarum : Menjahit", b: "Gunting : Memotong", desc: "Alat dan fungsi fizikal asasnya." },
+                    { a: "Kompas : Arah", b: "Termometer : Suhu", desc: "Alat pengukur dan kuantiti spesifik yang diukur." },
+                    { a: "Benih : Pokok", b: "Larva : Rama-rama", desc: "Peringkat kitaran awal kepada bentuk matang." },
+                    { a: "Arkitek : Pelan Bangunan", b: "Pengaturcara : Kod Perisian", desc: "Pakar dan reka bentuk intipati produknya." },
+                    { a: "Garam : Masin", b: "Gula : Manis", desc: "Bahan masakan dan profil rasa utama." },
+                    { a: "Cermin : Pantulan", b: "Kanta : Pembiasan", desc: "Komponen optik dan fenomena optik berkaitan." },
+                    { a: "Penulis : Novel", b: "Pengarah : Filem", desc: "Pencipta dan karya seni yang diterbitkan." },
+                    { a: "Paksi : Putaran", b: "Orbit : Peredaran", desc: "Laluan tetap bagi pergerakan angkasa." },
+                    { a: "Bateri : Arus Elektrik", b: "Empangan : Tenaga Hidro", desc: "Sumber penjana bekalan tenaga." },
+                    { a: "Jantung : Darah", b: "Pam : Air", desc: "Organ/alat mengepam cecair melalui saluran." },
+                    { a: "Mikroskop : Sel", b: "Teleskop : Bintang", desc: "Alat pembesar dan objek cerapan mengikut skala jarak." }
+                ];
+                const curAna = analogyMaster[(s - 1) % analogyMaster.length];
+                const parts = curAna.b.split(" : ");
+                qList.push({
+                    cat: "Analogi & Hubungan Logik",
+                    q: `Lengkapkan hubungan analogi perkataan berikut:\n"${curAna.a}" mempunyai hubungan yang setara dengan "${parts[0]} : [ ? ]"`,
+                    visual: SVG_ART.badgeEmoji("↔️"),
+                    options: [
+                        `Padanan fungsi terbalik`,
+                        `${parts[1]}`, // Ans
+                        `Konsep tidak berkait`,
+                        `Contoh berlawanan arah`
+                    ],
+                    ans: 1,
+                    expl: `Prinsip Hubungan: ${curAna.desc}. Maka, padanan sepadan bagi ${parts[0]} ialah <strong>${parts[1]}</strong>.`
+                });
+
+                // ==========================================
+                // Q6: NUMBER PATTERNS (Easy: +step, Med: Fibonacci/Multiply, Hard: Alternating Dual-Series)
+                // ==========================================
+                if (tierKey === "mudah") {
+                    const stepN = 3 + (s % 5);
+                    const startN = s * 3;
+                    const seq = [startN, startN + stepN, startN + stepN * 2, startN + stepN * 3, startN + stepN * 4];
+                    qList.push({
+                        cat: "Siri Nombor Bertingkat",
+                        q: `Apakah nombor seterusnya dalam siri ini: ${seq[0]}, ${seq[1]}, ${seq[2]}, ${seq[3]}, ___?`,
+                        visual: SVG_ART.badgeEmoji(`+${stepN}`),
+                        options: [`${seq[4] - stepN}`, `${seq[4]}`, `${seq[4] + 2}`, `${seq[4] + stepN}`],
+                        ans: 1,
+                        expl: `Setiap nombor bertambah secara konsisten dengan nilai +${stepN} (${seq[3]} + ${stepN} = <strong>${seq[4]}</strong>).`
+                    });
+                } else if (tierKey === "sederhana") {
+                    // Multiplying or doubling + 1
+                    const b = 2 + (s % 3);
+                    const n1 = b;
+                    const n2 = n1 * 2 + 1;
+                    const n3 = n2 * 2 + 1;
+                    const n4 = n3 * 2 + 1;
+                    const n5 = n4 * 2 + 1;
+                    qList.push({
+                        cat: "Pola Nombor Berformula",
+                        q: `Kenal pasti pola matematik dan nombor berikutnya: ${n1}, ${n2}, ${n3}, ${n4}, ___?`,
+                        visual: SVG_ART.badgeEmoji("✖️2+1"),
+                        options: [`${n5 - 4}`, `${n5}`, `${n5 + 3}`, `${n5 * 2}`],
+                        ans: 1,
+                        expl: `Formula jujukan ialah: (Nombor Terdahulu × 2) + 1. Oleh itu, (${n4} × 2) + 1 = <strong>${n5}</strong>.`
+                    });
+                } else {
+                    // Hard: Interleaved Dual-Series (Series A at even pos, Series B at odd pos)
+                    // e.g. 5, 20, 10, 18, 15, 16, [20], [14]
+                    const aStart = s * 2;
+                    const bStart = 50 - s;
+                    const fullSeq = [aStart, bStart, aStart + 5, bStart - 3, aStart + 10, bStart - 6, aStart + 15];
+                    const ansVal = fullSeq[6];
+                    qList.push({
+                        cat: "Siri Nombor Berkembar (Dual-Series)",
+                        q: `Perhatikan siri nombor berselang-seli: ${fullSeq[0]}, ${fullSeq[1]}, ${fullSeq[2]}, ${fullSeq[3]}, ${fullSeq[4]}, ${fullSeq[5]}, [ ? ]. Apakah nombor pengganti tanda tanya?`,
+                        visual: SVG_ART.badgeEmoji("🔀"),
+                        options: [`${ansVal - 5}`, `${ansVal}`, `${ansVal + 4}`, `${ansVal + 10}`],
+                        ans: 1,
+                        expl: `Ini ialah jujukan berkembar: Siri pertama (kedudukan ganjil: ${fullSeq[0]} → ${fullSeq[2]} → ${fullSeq[4]} → <strong>${ansVal}</strong>) bertambah +5 setiap langkah. Jawapannya ialah <strong>${ansVal}</strong>.`
+                    });
+                }
+
+                // ==========================================
+                // Q7: ALPHABET & CIPHER LOGIC
+                // ==========================================
+                const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                const skipLen = 1 + (s % 3);
+                const aIdx = (s * 2) % 8;
+                const ch1 = alpha[aIdx];
+                const ch2 = alpha[aIdx + skipLen + 1];
+                const ch3 = alpha[aIdx + (skipLen + 1) * 2];
+                const ch4 = alpha[aIdx + (skipLen + 1) * 3];
+                qList.push({
+                    cat: "Logik Abjad & Urutan",
+                    q: `Kenal pasti huruf seterusnya dalam pola abjad seragam ini: ${ch1}, ${ch2}, ${ch3}, ___?`,
+                    visual: SVG_ART.badgeEmoji("🔤"),
+                    options: [
+                        `${alpha[aIdx + (skipLen + 1) * 3 - 1]}`,
+                        `${ch4}`, // Ans
+                        `${alpha[aIdx + (skipLen + 1) * 3 + 1]}`,
+                        `${alpha[aIdx + (skipLen + 1) * 3 + 2]}`
+                    ],
+                    ans: 1,
+                    expl: `Pola abjad melangkau tepat <strong>${skipLen} huruf</strong> di antara setiap sebutan: Huruf seterusnya ialah <strong>${ch4}</strong>.`
+                });
+
+                // ==========================================
+                // Q8: DADO & SPATIAL INVERSE
+                // ==========================================
+                const dTop = (s % 6) + 1;
+                const dOpp = 7 - dTop;
+                qList.push({
+                    cat: "Penaakulan Ruang Dadu",
+                    isVisualOptions: true,
+                    q: `Pada satu dadu piawai, jumlah bintik dua permukaan bertentangan sentiasa bersamaan 7. Jika permukaan atas menunjukkan rajah di atas, pilih rajah permukaan di sebelah bawah:`,
+                    visual: SVG_ART.dice(dTop),
+                    options: [
+                        SVG_ART.dice((dOpp % 6) + 1),
+                        SVG_ART.dice(dOpp), // Ans
+                        SVG_ART.dice(((dOpp + 2) % 6) + 1),
+                        SVG_ART.dice(((dOpp + 4) % 6) + 1)
+                    ],
+                    ans: 1,
+                    expl: `Syarat dadu piawai: Nilai bertentangan mesti berjumlah 7 (7 - ${dTop} = <strong>${dOpp}</strong>). Maka permukaan bawah ialah Rajah (B) dengan ${dOpp} bintik.`
+                });
+
+                // ==========================================
+                // Q9: TIME & ANGLE REASONING
+                // ==========================================
+                const hrNow = (s % 12) || 12;
+                const hrAdd = (s % 4) + 2;
+                const hrTarget = ((hrNow + hrAdd - 1) % 12) + 1;
+                qList.push({
+                    cat: "Penaakulan Waktu & Sudut Jam",
+                    isVisualOptions: true,
+                    q: `Jam analog di atas menunjukkan tepat pukul ${hrNow}:00. Selepas jarum jam bergerak ${hrAdd} jam ke hadapan, pilih muka jam baharu yang betul:`,
+                    visual: SVG_ART.clock(hrNow),
+                    options: [
+                        SVG_ART.clock(((hrTarget + 1) % 12) || 12),
+                        SVG_ART.clock(hrTarget), // Ans
+                        SVG_ART.clock(((hrTarget + 5) % 12) || 12),
+                        SVG_ART.clock(((hrTarget + 8) % 12) || 12)
+                    ],
+                    ans: 1,
+                    expl: `Pukul ${hrNow}:00 ditambah ${hrAdd} jam bersamaan dengan <strong>pukul ${hrTarget}:00</strong>, iaitu paparan pada Rajah (B).`
+                });
+
+                // ==========================================
+                // Q10: DEDUCTIVE REASONING & SPEED MATH (KBAT)
+                // ==========================================
+                if (tierKey === "mencabar") {
+                    // Complex deductive / syllogism puzzle
+                    qList.push({
+                        cat: "Analisis Deduktif & Susunan",
+                        q: `Dalam satu ujian: Haris mendapat markah lebih tinggi daripada Danial. Danial mendapat markah lebih tinggi daripada Mei Ling. Sarah mendapat markah lebih tinggi daripada Haris. Siapakah yang mendapat markah kedua tertinggi?`,
+                        visual: SVG_ART.badgeEmoji("🥇"),
+                        options: [
+                            `Sarah`,
+                            `Haris`, // Ans (Sarah > Haris > Danial > Mei Ling)
+                            `Danial`,
+                            `Mei Ling`
+                        ],
+                        ans: 1,
+                        expl: `Susunan markah dari tertinggi ke terendah: Sarah (1) > <strong>Haris (2)</strong> > Danial (3) > Mei Ling (4). Maka individu kedua tertinggi ialah <strong>Haris</strong>.`
+                    });
+                } else if (tierKey === "sederhana") {
+                    // Speed, Distance, or Fraction word problem
+                    const speed = 60 + (s % 4) * 10;
+                    const hours = 2.5;
+                    const totalDist = speed * hours;
+                    qList.push({
+                        cat: "Penyelesaian Masalah Pantas",
+                        q: `Sebuah kenderaan bergerak dengan kelajuan seragam ${speed} km/j selama 2 jam 30 minit. Berapakah jumlah jarak yang dilalui?`,
+                        visual: SVG_ART.badgeEmoji("🚗"),
+                        options: [
+                            `${totalDist - 25} km`,
+                            `${totalDist} km`, // Ans
+                            `${totalDist + 30} km`,
+                            `${totalDist + 50} km`
+                        ],
+                        ans: 1,
+                        expl: `Jarak = Kelajuan × Masa: ${speed} km/j × 2.5 jam = <strong>${totalDist} km</strong>.`
+                    });
+                } else {
+                    // Mudah: Direct distribution / arithmetic
+                    const perBox = 4 + (s % 4);
+                    const boxes = 5;
+                    const totItems = perBox * boxes;
+                    qList.push({
+                        cat: "Penyelesaian Masalah Pantas",
+                        q: `Terdapat sejumlah ${totItems} batang pensel yang dibungkus sama rata ke dalam ${boxes} buah kotak kecil. Berapakah batang pensel dalam setiap kotak?`,
+                        visual: SVG_ART.badgeEmoji("✏️"),
+                        options: [
+                            `${perBox - 1} batang`,
+                            `${perBox} batang`, // Ans
+                            `${perBox + 2} batang`,
+                            `${perBox * 2} batang`
+                        ],
+                        ans: 1,
+                        expl: `Operasi bahagi terus: ${totItems} pensel ÷ ${boxes} kotak = <strong>${perBox} batang pensel</strong> setiap kotak.`
+                    });
+                }
+
+                // Shuffle options for varied correct answer placement
+                qList.forEach(question => {
+                    const mapped = question.options.map((opt, idx) => ({ opt, isCorrect: idx === question.ans }));
+                    for (let i = mapped.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [mapped[i], mapped[j]] = [mapped[j], mapped[i]];
+                    }
+                    question.options = mapped.map(m => m.opt);
+                    question.ans = mapped.findIndex(m => m.isCorrect);
+                });
+
+                fullBank.push({
+                    setId: s,
+                    title: `Set ${s}`,
+                    tier: tierKey,
+                    tierLabel: tierLabel,
+                    tierBadgeClass: tierBadgeClass,
+                    questions: qList
+                });
+            }
+
+            return fullBank;
+        }
+
+        // ==========================================
+        // 3. APPLICATION STATE & PERSISTENCE
+        // ==========================================
+        const quizBank = create400Questions();
+        let currentSetIdx = 0;
+        let currentQuestionIdx = 0;
+        let activeSetScore = 0;
+        let isAnswerChecked = false;
+        let selectedOptionIdx = null;
+        let currentFilterTier = 'all';
+
+        function getUserName() {
+            try {
+                return localStorage.getItem('pksk_user_name_v5') || localStorage.getItem('pksk_user_name_v4') || '';
+            } catch (e) {
+                return '';
+            }
+        }
+
+        function setUserName(name) {
+            try {
+                localStorage.setItem('pksk_user_name_v5', name.trim());
+            } catch (e) {}
+        }
+
+        function getProgressRecords() {
+            try {
+                const data = localStorage.getItem('pksk_progress_v5') || localStorage.getItem('pksk_progress_v4');
+                return data ? JSON.parse(data) : {};
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveSetRecord(setId, score) {
+            try {
+                const records = getProgressRecords();
+                records[setId] = { 
+                    score: score, 
+                    total: 10, 
+                    updated: Date.now(),
+                    dateStr: new Date().toLocaleDateString('ms-MY', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+                };
+                localStorage.setItem('pksk_progress_v5', JSON.stringify(records));
+            } catch (e) {}
+        }
+
+        function triggerConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const particles = [];
+            const colors = ['#6366f1', '#a855f7', '#ec4899', '#10b981', '#f59e0b', '#3b82f6'];
+
+            for (let i = 0; i < 90; i++) {
+                particles.push({
+                    x: canvas.width / 2,
+                    y: canvas.height / 2,
+                    w: Math.random() * 8 + 4,
+                    h: Math.random() * 6 + 4,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    vx: (Math.random() - 0.5) * 16,
+                    vy: (Math.random() - 0.7) * 18,
+                    rot: Math.random() * 360,
+                    rotSpeed: (Math.random() - 0.5) * 12,
+                    gravity: 0.35,
+                    opacity: 1
+                });
+            }
+
+            let animationFrameId;
+            function render() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let alive = false;
+
+                particles.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += p.gravity;
+                    p.rot += p.rotSpeed;
+                    p.opacity -= 0.012;
+
+                    if (p.opacity > 0) {
+                        alive = true;
+                        ctx.save();
+                        ctx.translate(p.x, p.y);
+                        ctx.rotate((p.rot * Math.PI) / 180);
+                        ctx.globalAlpha = Math.max(0, p.opacity);
+                        ctx.fillStyle = p.color;
+                        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                        ctx.restore();
+                    }
+                });
+
+                if (alive) {
+                    animationFrameId = requestAnimationFrame(render);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    cancelAnimationFrame(animationFrameId);
+                }
+            }
+            render();
+        }
+
+        // ==========================================
+        // 4. SCREEN CONTROLLERS
+        // ==========================================
+        function initApp() {
+            try {
+                const embeddedScript = document.getElementById('embedded-pksk-data');
+                if (embeddedScript && embeddedScript.textContent.trim()) {
+                    const parsed = JSON.parse(embeddedScript.textContent);
+                    if (parsed.name && !localStorage.getItem('pksk_user_name_v5')) {
+                        localStorage.setItem('pksk_user_name_v5', parsed.name);
+                    }
+                    if (parsed.progress) {
+                        const localRecords = getProgressRecords();
+                        const merged = { ...parsed.progress, ...localRecords };
+                        localStorage.setItem('pksk_progress_v5', JSON.stringify(merged));
+                    }
+                }
+            } catch (err) {
+                console.error("Error reading embedded data:", err);
+            }
+
+            const userName = getUserName();
+            if (userName) {
+                showHubScreen();
+            } else {
+                showWelcomeScreen();
+            }
+        }
+
+        function hideAllScreens() {
+            document.getElementById('screen-welcome').classList.add('hidden-screen');
+            document.getElementById('screen-hub').classList.add('hidden-screen');
+            document.getElementById('screen-quiz').classList.add('hidden-screen');
+            document.getElementById('screen-result').classList.add('hidden-screen');
+        }
+
+        function showWelcomeScreen() {
+            hideAllScreens();
+            document.getElementById('screen-welcome').classList.remove('hidden-screen');
+            document.getElementById('input-user-name').value = '';
+            document.getElementById('input-user-name').focus();
+        }
+
+        function handleStartUser(e) {
+            e.preventDefault();
+            const inputVal = document.getElementById('input-user-name').value.trim();
+            if (!inputVal) return;
+            setUserName(inputVal);
+            showHubScreen();
+        }
+
+        function setFilterDifficulty(tier) {
+            currentFilterTier = tier;
+            const tabs = ['all', 'mudah', 'sederhana', 'mencabar'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tab-diff-${t}`);
+                if (t === tier) {
+                    btn.className = "px-2.5 py-1 rounded-lg bg-white text-indigo-700 shadow-2xs font-black";
+                } else {
+                    btn.className = "px-2.5 py-1 rounded-lg text-slate-600 hover:text-slate-900 font-bold";
+                }
+            });
+            renderHubGrid();
+        }
+
+        function renderHubGrid() {
+            const records = getProgressRecords();
+            const gridContainer = document.getElementById('hub-sets-grid');
+            gridContainer.innerHTML = '';
+
+            const filteredSets = quizBank.filter(s => currentFilterTier === 'all' || s.tier === currentFilterTier);
+
+            filteredSets.forEach(setObj => {
+                const globalIndex = quizBank.findIndex(s => s.setId === setObj.setId);
+                const rec = records[setObj.setId];
+                const isCompleted = !!rec;
+
+                let tierBorderClass = "set-card-mudah";
+                let tierDot = "🟢";
+                if (setObj.tier === "sederhana") {
+                    tierBorderClass = "set-card-sederhana";
+                    tierDot = "🟡";
+                } else if (setObj.tier === "mencabar") {
+                    tierBorderClass = "set-card-mencabar";
+                    tierDot = "🔴";
+                }
+
+                const btn = document.createElement('button');
+                btn.className = `p-2 sm:p-2.5 rounded-2xl border text-center transition flex flex-col items-center justify-between min-h-[78px] cursor-pointer btn-tactile ${tierBorderClass} ${
+                    isCompleted ? 'set-completed text-emerald-950 font-bold' : 'hover:scale-[1.02] shadow-2xs'
+                }`;
+                btn.onclick = () => startSet(globalIndex);
+
+                btn.innerHTML = `
+                    <div class="flex items-center justify-between w-full text-[9px] font-black tracking-wider ${isCompleted ? 'text-emerald-700' : 'text-slate-500'}">
+                        <span>${tierDot} S${setObj.setId}</span>
+                        <span>${isCompleted ? '✓' : ''}</span>
+                    </div>
+                    <div class="text-sm sm:text-base font-black text-slate-900 my-0.5">Set ${setObj.setId}</div>
+                    <div class="text-[9px] font-extrabold ${isCompleted ? 'text-emerald-800 bg-white/80 px-1.5 py-0.5 rounded-md' : 'text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded-md'}">
+                        ${isCompleted ? `${rec.score}/10` : '10 Sln'}
+                    </div>
+                `;
+                gridContainer.appendChild(btn);
+            });
+        }
+
+        function showHubScreen() {
+            hideAllScreens();
+            document.getElementById('screen-hub').classList.remove('hidden-screen');
+
+            const userName = getUserName() || 'Pengguna';
+            document.getElementById('hub-user-greeting').innerHTML = `<span>${userName}</span> <span class="text-amber-500">✨</span>`;
+
+            const records = getProgressRecords();
+            let completedCount = 0;
+            let totalCorrect = 0;
+
+            quizBank.forEach(setObj => {
+                const rec = records[setObj.setId];
+                if (rec) {
+                    completedCount++;
+                    totalCorrect += rec.score;
+                }
+            });
+
+            const totalAnswered = completedCount * 10;
+            const accuracy = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+
+            document.getElementById('stat-sets-completed').innerText = `${completedCount}/40`;
+            document.getElementById('stat-total-score').innerText = `${totalCorrect}/400`;
+            document.getElementById('stat-accuracy').innerText = `${accuracy}%`;
+
+            renderHubGrid();
+        }
+
+        function startSet(setIndex) {
+            currentSetIdx = setIndex;
+            currentQuestionIdx = 0;
+            activeSetScore = 0;
+            isAnswerChecked = false;
+            selectedOptionIdx = null;
+
+            hideAllScreens();
+            document.getElementById('screen-quiz').classList.remove('hidden-screen');
+            loadActiveQuestion();
+        }
+
+        function returnToHub() {
+            showHubScreen();
+        }
+
+        // ==========================================
+        // 5. QUESTION DISPLAY & CHECKING ENGINE
+        // ==========================================
+        function loadActiveQuestion() {
+            isAnswerChecked = false;
+            selectedOptionIdx = null;
+
+            const currentSet = quizBank[currentSetIdx];
+            const q = currentSet.questions[currentQuestionIdx];
+
+            // Tier and Set Badges
+            const tierBadge = document.getElementById('quiz-tier-badge');
+            tierBadge.innerText = currentSet.tierLabel;
+            tierBadge.className = `px-2 py-0.5 text-[10px] font-black rounded-full uppercase tracking-wider border ${currentSet.tierBadgeClass}`;
+
+            document.getElementById('quiz-set-tag').innerText = `Set ${currentSet.setId}`;
+            document.getElementById('quiz-progress-num').innerText = `Soalan ${currentQuestionIdx + 1} / 10`;
+            document.getElementById('quiz-progress-bar').style.width = `${((currentQuestionIdx) / 10) * 100}%`;
+
+            document.getElementById('quiz-cat-text').innerText = q.cat;
+            document.getElementById('quiz-stem-text').innerText = q.q;
+
+            document.getElementById('quiz-visual-box').innerHTML = q.visual;
+
+            const optsContainer = document.getElementById('quiz-options-container');
+            optsContainer.innerHTML = '';
+            const labels = ['A', 'B', 'C', 'D'];
+
+            if (q.isVisualOptions) {
+                optsContainer.className = 'grid grid-cols-2 gap-2.5 mb-3';
+                q.options.forEach((optSvg, optIdx) => {
+                    const optBtn = document.createElement('button');
+                    optBtn.className = 'btn-tactile relative p-3 rounded-2xl border-2 border-slate-200/90 hover:border-indigo-400 hover:bg-indigo-50/30 transition flex flex-col items-center justify-center min-h-[90px] bg-white cursor-pointer group focus:outline-none shadow-2xs';
+                    optBtn.innerHTML = `
+                        <span class="absolute top-2 left-2 w-5 h-5 rounded-md bg-slate-100 text-slate-700 font-extrabold text-[10px] flex items-center justify-center border border-slate-200 group-hover:border-indigo-300 group-hover:bg-indigo-50">${labels[optIdx]}</span>
+                        <div class="my-0.5 flex items-center justify-center pointer-events-none scale-100">
+                            ${optSvg}
+                        </div>
+                    `;
+                    optBtn.onclick = () => selectVisualOption(optIdx, optBtn);
+                    optsContainer.appendChild(optBtn);
+                });
+            } else {
+                optsContainer.className = 'space-y-2 mb-3';
+                q.options.forEach((optText, optIdx) => {
+                    const optBtn = document.createElement('button');
+                    optBtn.className = 'btn-tactile w-full text-left p-3 rounded-2xl border-2 border-slate-200/90 hover:border-indigo-400 hover:bg-indigo-50/30 transition flex items-center gap-3 text-xs sm:text-sm font-semibold text-slate-700 bg-white shadow-2xs focus:outline-none cursor-pointer';
+                    optBtn.innerHTML = `
+                        <span class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 font-extrabold text-xs flex items-center justify-center shrink-0 border border-slate-200">${labels[optIdx]}</span>
+                        <span class="leading-snug">${optText}</span>
+                    `;
+                    optBtn.onclick = () => selectTextOption(optIdx, optBtn);
+                    optsContainer.appendChild(optBtn);
+                });
+            }
+
+            document.getElementById('quiz-feedback-box').className = "hidden p-3.5 rounded-2xl mb-3 text-xs leading-relaxed";
+
+            const actionBtn = document.getElementById('quiz-action-btn');
+            actionBtn.innerText = "Semak Jawapan";
+            actionBtn.disabled = true;
+            actionBtn.onclick = checkSelectedAnswer;
+        }
+
+        function selectVisualOption(index, buttonEl) {
+            if (isAnswerChecked) return;
+            selectedOptionIdx = index;
+            const allBtns = document.getElementById('quiz-options-container').children;
+
+            Array.from(allBtns).forEach(b => {
+                b.className = 'btn-tactile relative p-3 rounded-2xl border-2 border-slate-200/90 hover:border-indigo-400 hover:bg-indigo-50/30 transition flex flex-col items-center justify-center min-h-[90px] bg-white cursor-pointer group focus:outline-none shadow-2xs';
+                b.querySelector('span:first-child').className = 'absolute top-2 left-2 w-5 h-5 rounded-md bg-slate-100 text-slate-700 font-extrabold text-[10px] flex items-center justify-center border border-slate-200';
+            });
+
+            buttonEl.className = 'btn-tactile relative p-3 rounded-2xl border-2 border-indigo-600 bg-indigo-50/90 shadow-md shadow-indigo-500/15 transition flex flex-col items-center justify-center min-h-[90px] cursor-pointer focus:outline-none';
+            buttonEl.querySelector('span:first-child').className = 'absolute top-2 left-2 w-5 h-5 rounded-md bg-indigo-600 text-white font-extrabold text-[10px] flex items-center justify-center';
+
+            document.getElementById('quiz-action-btn').disabled = false;
+        }
+
+        function selectTextOption(index, buttonEl) {
+            if (isAnswerChecked) return;
+            selectedOptionIdx = index;
+            const allBtns = document.getElementById('quiz-options-container').children;
+
+            Array.from(allBtns).forEach(b => {
+                b.className = 'btn-tactile w-full text-left p-3 rounded-2xl border-2 border-slate-200/90 hover:border-indigo-400 hover:bg-indigo-50/30 transition flex items-center gap-3 text-xs sm:text-sm font-semibold text-slate-700 bg-white shadow-2xs focus:outline-none cursor-pointer';
+                b.querySelector('span:first-child').className = 'w-6 h-6 rounded-lg bg-slate-100 text-slate-700 font-extrabold text-xs flex items-center justify-center shrink-0 border border-slate-200';
+            });
+
+            buttonEl.className = 'btn-tactile w-full text-left p-3 rounded-2xl border-2 border-indigo-600 bg-indigo-50/90 transition flex items-center gap-3 text-xs sm:text-sm font-black text-indigo-950 shadow-md shadow-indigo-500/15 focus:outline-none';
+            buttonEl.querySelector('span:first-child').className = 'w-6 h-6 rounded-lg bg-indigo-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0';
+
+            document.getElementById('quiz-action-btn').disabled = false;
+        }
+
+        function checkSelectedAnswer() {
+            isAnswerChecked = true;
+            const currentSet = quizBank[currentSetIdx];
+            const q = currentSet.questions[currentQuestionIdx];
+            const optionBtns = document.getElementById('quiz-options-container').children;
+
+            const feedbackBox = document.getElementById('quiz-feedback-box');
+            const feedbackHeader = document.getElementById('feedback-header');
+            const feedbackText = document.getElementById('feedback-explanation');
+
+            if (q.isVisualOptions) {
+                if (selectedOptionIdx === q.ans) {
+                    optionBtns[selectedOptionIdx].className = 'relative p-3 rounded-2xl border-2 border-emerald-500 bg-emerald-50 transition flex flex-col items-center justify-center min-h-[90px] shadow-sm';
+                    optionBtns[selectedOptionIdx].querySelector('span:first-child').className = 'absolute top-2 left-2 w-5 h-5 rounded-md bg-emerald-600 text-white font-black text-[10px] flex items-center justify-center';
+                    feedbackHeader.innerHTML = `<span class="text-emerald-700">🎉 Tepat Sekali! Pilihan anda betul.</span>`;
+                    feedbackBox.className = "block bg-emerald-50/90 border border-emerald-200 p-3.5 rounded-2xl mb-3 text-xs leading-relaxed text-emerald-950 shadow-2xs";
+                    activeSetScore++;
+                } else {
+                    optionBtns[selectedOptionIdx].className = 'relative p-3 rounded-2xl border-2 border-rose-400 bg-rose-50 transition flex flex-col items-center justify-center min-h-[90px] shadow-sm';
+                    optionBtns[selectedOptionIdx].querySelector('span:first-child').className = 'absolute top-2 left-2 w-5 h-5 rounded-md bg-rose-600 text-white font-black text-[10px] flex items-center justify-center';
+
+                    optionBtns[q.ans].className = 'relative p-3 rounded-2xl border-2 border-emerald-500 bg-emerald-50 transition flex flex-col items-center justify-center min-h-[90px] shadow-sm';
+                    optionBtns[q.ans].querySelector('span:first-child').className = 'absolute top-2 left-2 w-5 h-5 rounded-md bg-emerald-600 text-white font-black text-[10px] flex items-center justify-center';
+
+                    feedbackHeader.innerHTML = `<span class="text-rose-700">❌ Kurang Tepat (Jawapan sebenar ialah pilihan berkotak hijau)</span>`;
+                    feedbackBox.className = "block bg-rose-50/90 border border-rose-200 p-3.5 rounded-2xl mb-3 text-xs leading-relaxed text-rose-950 shadow-2xs";
+                }
+            } else {
+                if (selectedOptionIdx === q.ans) {
+                    optionBtns[selectedOptionIdx].className = 'w-full text-left p-3 rounded-2xl border-2 border-emerald-500 bg-emerald-50 transition flex items-center gap-3 text-xs sm:text-sm font-black text-emerald-950 shadow-sm';
+                    optionBtns[selectedOptionIdx].querySelector('span:first-child').className = 'w-6 h-6 rounded-lg bg-emerald-600 text-white font-black text-xs flex items-center justify-center shrink-0';
+                    feedbackHeader.innerHTML = `<span class="text-emerald-700">🎉 Tepat Sekali!</span>`;
+                    feedbackBox.className = "block bg-emerald-50/90 border border-emerald-200 p-3.5 rounded-2xl mb-3 text-xs leading-relaxed text-emerald-950 shadow-2xs";
+                    activeSetScore++;
+                } else {
+                    optionBtns[selectedOptionIdx].className = 'w-full text-left p-3 rounded-2xl border-2 border-rose-400 bg-rose-50 transition flex items-center gap-3 text-xs sm:text-sm font-black text-rose-950 shadow-sm';
+                    optionBtns[selectedOptionIdx].querySelector('span:first-child').className = 'w-6 h-6 rounded-lg bg-rose-600 text-white font-black text-xs flex items-center justify-center shrink-0';
+
+                    optionBtns[q.ans].className = 'w-full text-left p-3 rounded-2xl border-2 border-emerald-500 bg-emerald-50 transition flex items-center gap-3 text-xs sm:text-sm font-black text-emerald-950 shadow-sm';
+                    optionBtns[q.ans].querySelector('span:first-child').className = 'w-6 h-6 rounded-lg bg-emerald-600 text-white font-black text-xs flex items-center justify-center shrink-0';
+                    feedbackHeader.innerHTML = `<span class="text-rose-700">❌ Kurang Tepat</span>`;
+                    feedbackBox.className = "block bg-rose-50/90 border border-rose-200 p-3.5 rounded-2xl mb-3 text-xs leading-relaxed text-rose-950 shadow-2xs";
+                }
+            }
+
+            feedbackText.innerHTML = q.expl;
+
+            const actionBtn = document.getElementById('quiz-action-btn');
+            if (currentQuestionIdx < 9) {
+                actionBtn.innerText = "Soalan Seterusnya →";
+                actionBtn.onclick = () => {
+                    currentQuestionIdx++;
+                    loadActiveQuestion();
+                };
+            } else {
+                actionBtn.innerText = "Lihat Keputusan Set ✨";
+                actionBtn.onclick = showSetScoreSummary;
+            }
+        }
+
+        function showSetScoreSummary() {
+            hideAllScreens();
+            document.getElementById('screen-result').classList.remove('hidden-screen');
+
+            const currentSet = quizBank[currentSetIdx];
+            saveSetRecord(currentSet.setId, activeSetScore);
+
+            const userName = getUserName() || 'Pengguna';
+            document.getElementById('result-set-title').innerText = `Tahniah ${userName}! ${currentSet.title} (${currentSet.tierLabel}) Selesai`;
+            document.getElementById('result-score-number').innerText = `${activeSetScore} / 10`;
+
+            const percentage = (activeSetScore / 10) * 100;
+            document.getElementById('result-percentage-tag').innerText = `${percentage}% Ketepatan`;
+
+            const iconEl = document.getElementById('result-icon');
+            const commentEl = document.getElementById('result-comment');
+
+            if (percentage >= 80) {
+                iconEl.innerText = "🏆";
+                commentEl.innerHTML = `<strong class="text-indigo-900 font-black block mb-1">Pencapaian Sangat Cemerlang!</strong>Pengecaman pola dan kepantasan minda anak anda sangat tajam untuk set ini. Rekod telah dicatatkan ke dalam Buku Pantauan Ibu Bapa.`;
+                triggerConfetti();
+            } else if (percentage >= 50) {
+                iconEl.innerText = "⭐";
+                commentEl.innerHTML = `<strong class="text-indigo-900 font-black block mb-1">Prestasi Yang Bagus!</strong>Asas pemikiran logik sudah kukuh. Anda boleh mengulangi set ini atau meneruskan ke set berikutnya bagi memantapkan rentak menjawab.`;
+            } else {
+                iconEl.innerText = "💪";
+                commentEl.innerHTML = `<strong class="text-indigo-900 font-black block mb-1">Permulaan Positif!</strong>Soalan IQ PKSK (terutamanya tahap sederhana & mencabar) memerlukan latihan berulang. Buka semula set ini bila-bila masa.`;
+            }
+
+            const nextBtn = document.getElementById('result-next-btn');
+            if (currentSetIdx < quizBank.length - 1) {
+                nextBtn.innerText = "Set Seterusnya →";
+                nextBtn.onclick = () => startSet(currentSetIdx + 1);
+            } else {
+                nextBtn.innerText = "Menu Utama 🏠";
+                nextBtn.onclick = returnToHub;
+            }
+        }
+
+        function retryActiveSet() {
+            startSet(currentSetIdx);
+        }
+
+        function proceedNextSet() {
+            if (currentSetIdx < quizBank.length - 1) {
+                startSet(currentSetIdx + 1);
+            } else {
+                returnToHub();
+            }
+        }
+
+        // ==========================================
+        // 6. PARENT REPORT & PROGRESS MODALS
+        // ==========================================
+        function openParentReportModal() {
+            const records = getProgressRecords();
+            const userName = getUserName() || 'Calon PKSK';
+            document.getElementById('report-modal-user-subtitle').innerText = `Rekod Kemajuan Murid: ${userName}`;
+
+            // Calculate tier breakdowns
+            let mudahDone = 0, mudahScore = 0;
+            let medDone = 0, medScore = 0;
+            let hardDone = 0, hardScore = 0;
+
+            quizBank.forEach(s => {
+                const rec = records[s.setId];
+                if (rec) {
+                    if (s.tier === "mudah") { mudahDone++; mudahScore += rec.score; }
+                    else if (s.tier === "sederhana") { medDone++; medScore += rec.score; }
+                    else if (s.tier === "mencabar") { hardDone++; hardScore += rec.score; }
+                }
+            });
+
+            const accMudah = mudahDone > 0 ? Math.round((mudahScore / (mudahDone * 10)) * 100) : 0;
+            const accMed = medDone > 0 ? Math.round((medScore / (medDone * 10)) * 100) : 0;
+            const accHard = hardDone > 0 ? Math.round((hardScore / (hardDone * 10)) * 100) : 0;
+
+            document.getElementById('report-tier-mudah').innerText = `${mudahDone}/12 Set (${mudahScore} Mk)`;
+            document.getElementById('report-acc-mudah').innerText = `${accMudah}% Ketepatan`;
+
+            document.getElementById('report-tier-sederhana').innerText = `${medDone}/14 Set (${medScore} Mk)`;
+            document.getElementById('report-acc-sederhana').innerText = `${accMed}% Ketepatan`;
+
+            document.getElementById('report-tier-mencabar').innerText = `${hardDone}/14 Set (${hardScore} Mk)`;
+            document.getElementById('report-acc-mencabar').innerText = `${accHard}% Ketepatan`;
+
+            // Diagnostic assessment note for parents
+            const diagBox = document.getElementById('report-diagnostic-box');
+            const totalSetsDone = mudahDone + medDone + hardDone;
+            if (totalSetsDone === 0) {
+                diagBox.innerHTML = `<strong>Status Permulaan:</strong> Calon belum menduduki sebarang set latihan. Disyorkan memulakan Set 1 hingga 12 untuk memanaskan kebolehan pengecaman corak asas.`;
+            } else if (accHard >= 75 && hardDone >= 5) {
+                diagBox.innerHTML = `<strong>Status Diagnostik: SANGAT CEMERLANG 🌟</strong><br>Anak anda menunjukkan ketajaman IQ tinggi dalam soalan KBAT Mencabar (${accHard}%). Persediaan mental beliau untuk Ujian PKSK berada pada tahap yang mantap!`;
+            } else if (accMed >= 60) {
+                diagBox.innerHTML = `<strong>Status Diagnostik: KUKUH & BERPOTENSI TINGGI ⭐</strong><br>Penguasaan tahap Mudah dan Sederhana sangat baik. Teruskan galakan untuk melengkapkan baki Set 27-40 (Tahap Mencabar) bagi melatih minda di bawah tekanan masa.`;
+            } else {
+                diagBox.innerHTML = `<strong>Status Diagnostik: PERLU LATIHAN BERTERUSAN 💪</strong><br>Bimbing anak meneliti ulasan jawapan setiap kali selesai set. Ulangi set yang mendapat markah bawah 7/10 untuk mengukuhkan rentak pemikiran visual.`;
+            }
+
+            // Populate table rows for all 40 sets
+            const tableBody = document.getElementById('report-table-body');
+            tableBody.innerHTML = '';
+
+            quizBank.forEach((s, idx) => {
+                const rec = records[s.setId];
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 transition";
+
+                let tierPill = `<span class="px-2 py-0.5 rounded-md text-[9px] font-black bg-emerald-100 text-emerald-800">Mudah</span>`;
+                if (s.tier === "sederhana") {
+                    tierPill = `<span class="px-2 py-0.5 rounded-md text-[9px] font-black bg-amber-100 text-amber-800">Sederhana</span>`;
+                } else if (s.tier === "mencabar") {
+                    tierPill = `<span class="px-2 py-0.5 rounded-md text-[9px] font-black bg-rose-100 text-rose-800">Mencabar</span>`;
+                }
+
+                const scoreText = rec ? `<strong class="text-indigo-700">${rec.score} / 10</strong>` : `<span class="text-slate-400 font-normal">Belum Dijawab</span>`;
+                const pctText = rec ? `${rec.score * 10}%` : `-`;
+
+                tr.innerHTML = `
+                    <td class="p-2.5 font-black text-slate-800">Set ${s.setId}</td>
+                    <td class="p-2.5">${tierPill}</td>
+                    <td class="p-2.5 text-center">${scoreText}</td>
+                    <td class="p-2.5 text-center font-black ${rec && rec.score >= 8 ? 'text-emerald-600' : 'text-slate-700'}">${pctText}</td>
+                    <td class="p-2.5 text-right">
+                        <button onclick="closeParentReportModal(); startSet(${idx});" class="btn-tactile text-[10px] text-indigo-700 hover:text-indigo-900 bg-indigo-50 hover:bg-indigo-100 font-black px-2 py-1 rounded-lg">
+                            ${rec ? 'Ulang ↺' : 'Mula →'}
+                        </button>
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+            });
+
+            document.getElementById('modal-parent-report').classList.remove('hidden-screen');
+        }
+
+        function closeParentReportModal() {
+            document.getElementById('modal-parent-report').classList.add('hidden-screen');
+        }
+
+        function copyParentReportSummary() {
+            const records = getProgressRecords();
+            const userName = getUserName() || 'Calon PKSK';
+
+            let countDone = 0;
+            let sumScore = 0;
+            quizBank.forEach(s => {
+                if (records[s.setId]) {
+                    countDone++;
+                    sumScore += records[s.setId].score;
+                }
+            });
+
+            const overallPct = countDone > 0 ? Math.round((sumScore / (countDone * 10)) * 100) : 0;
+            const textToCopy = `📊 *LAPORAN PRESTASI LATIHAN IQ PKSK*\nNama Calon: ${userName}\nSet Selesai: ${countDone} daripada 40 Set\nJumlah Markah: ${sumScore} / ${countDone * 10} (${overallPct}% Ketepatan)\nTarikh Semakan: ${new Date().toLocaleDateString('ms-MY')}\n\nTeruskan latihan di Portal SuperIQ PKSK!`;
+
+            const tempInput = document.createElement('textarea');
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showSyncMessage("✓ Laporan ringkasan berjaya disalin! Sedia untuk ditampal ke WhatsApp.");
+            openSyncModal();
+        }
+
+        function openSyncModal() {
+            document.getElementById('modal-sync').classList.remove('hidden-screen');
+            document.getElementById('sync-status-msg').className = 'hidden';
+            document.getElementById('input-sync-code').value = '';
+        }
+
+        function closeSyncModal() {
+            document.getElementById('modal-sync').classList.add('hidden-screen');
+        }
+
+        function showSyncMessage(text, isError = false) {
+            const msgEl = document.getElementById('sync-status-msg');
+            msgEl.className = isError 
+                ? 'block text-center text-xs font-black py-2 px-3 rounded-xl mb-3 bg-rose-50 border border-rose-200 text-rose-700' 
+                : 'block text-center text-xs font-black py-2 px-3 rounded-xl mb-3 bg-emerald-50 border border-emerald-200 text-emerald-700';
+            msgEl.innerText = text;
+        }
+
+        function downloadUpdatedHtml() {
+            try {
+                const currentData = {
+                    name: getUserName(),
+                    progress: getProgressRecords(),
+                    exportedAt: new Date().toISOString()
+                };
+
+                let fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                const jsonStr = JSON.stringify(currentData);
+                fullHtml = fullHtml.replace(
+                    /<script id="embedded-pksk-data" type="application\/json">[\s\S]*?<\/script>/,
+                    `<script id="embedded-pksk-data" type="application/json">${jsonStr}<\/script>`
+                );
+
+                const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+                const blobUrl = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = blobUrl;
+                a.download = `index.html`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(blobUrl);
+
+                showSyncMessage("✓ Fail index.html (berisi rekod 40 set) berjaya dimuat turun!");
+            } catch (err) {
+                showSyncMessage("Gagal memuat turun fail. Sila guna Cara 2.", true);
+            }
+        }
+
+        function copySyncCode() {
+            const payload = {
+                name: getUserName(),
+                records: getProgressRecords()
+            };
+            const code = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+
+            const tempInput = document.createElement('textarea');
+            tempInput.value = code;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showSyncMessage("✓ Kod kemajuan berjaya disalin! Tampal ke WhatsApp atau laptop lain.");
+        }
+
+        function applyImportedCode() {
+            const raw = document.getElementById('input-sync-code').value.trim();
+            if (!raw) {
+                showSyncMessage("Sila tampal kod terlebih dahulu.", true);
+                return;
+            }
+
+            try {
+                const decodedStr = decodeURIComponent(escape(atob(raw)));
+                const data = JSON.parse(decodedStr);
+
+                if (data.name) setUserName(data.name);
+                if (data.records) {
+                    const current = getProgressRecords();
+                    const merged = { ...current, ...data.records };
+                    localStorage.setItem('pksk_progress_v5', JSON.stringify(merged));
+                }
+
+                showSyncMessage("✓ Rekod berjaya dimuatkan!");
+                setTimeout(() => {
+                    closeSyncModal();
+                    showHubScreen();
+                }, 1000);
+            } catch (err) {
+                showSyncMessage("Kod tidak sah. Sila pastikan anda menyalin kod dengan betul.", true);
+            }
+        }
+
+        function promptResetProgress() {
+            document.getElementById('modal-reset').classList.remove('hidden-screen');
+        }
+
+        function closeResetModal() {
+            document.getElementById('modal-reset').classList.add('hidden-screen');
+        }
+
+        function confirmResetProgress() {
+            try {
+                localStorage.removeItem('pksk_progress_v5');
+            } catch (e) {}
+            closeResetModal();
+            showHubScreen();
+        }
+
+        function openEditNameModal() {
+            document.getElementById('input-new-name').value = getUserName();
+            document.getElementById('modal-edit-name').classList.remove('hidden-screen');
+            document.getElementById('input-new-name').focus();
+        }
+
+        function closeEditNameModal() {
+            document.getElementById('modal-edit-name').classList.add('hidden-screen');
+        }
+
+        function saveNewName() {
+            const newName = document.getElementById('input-new-name').value.trim();
+            if (newName) {
+                setUserName(newName);
+                closeEditNameModal();
+                showHubScreen();
+            }
+        }
+
+        function openAngleGuideModal() {
+            document.getElementById('modal-angle-guide').classList.remove('hidden-screen');
+        }
+
+        function closeAngleGuideModal() {
+            document.getElementById('modal-angle-guide').classList.add('hidden-screen');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initApp();
+        });
+    </script>
+</body>
+</html>
